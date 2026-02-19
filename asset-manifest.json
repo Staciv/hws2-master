@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/git@github.com:Staciv/hws2-master.git/static/css/main.6961f152.css",
+    "main.js": "/git@github.com:Staciv/hws2-master.git/static/js/main.33913ec1.js",
+    "static/js/787.66cb4309.chunk.js": "/git@github.com:Staciv/hws2-master.git/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/git@github.com:Staciv/hws2-master.git/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/git@github.com:Staciv/hws2-master.git/index.html",
+    "main.6961f152.css.map": "/git@github.com:Staciv/hws2-master.git/static/css/main.6961f152.css.map",
+    "main.33913ec1.js.map": "/git@github.com:Staciv/hws2-master.git/static/js/main.33913ec1.js.map",
+    "787.66cb4309.chunk.js.map": "/git@github.com:Staciv/hws2-master.git/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6961f152.css",
+    "static/js/main.33913ec1.js"
+  ]
+}
