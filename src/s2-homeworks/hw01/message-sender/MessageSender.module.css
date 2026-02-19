@@ -1,18 +1,48 @@
 .sendForm {
-
+display: flex;
+    justify-content: space-between;
+    gap: 44px;
 }
 
 .textarea {
+    width: 100%;
+    min-height: 40px;
+
+    padding: 10px 24px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #F5F7FB;
+
+    border: none;
+    box-shadow: 0 2px 0 0 #1D21261A;
+    border-radius: 16px;
+
+    resize: vertical;   /* только по высоте */
+    outline: none;
+
 
 }
 
 .button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+
+    padding: 10px 38px;
+    background-color: #0066CC;
+    border: none;
+    border-radius: 24px;
+
+    transition: all 0.6s;
 
 }
 
 .button:hover {
-
+    background-color: rgba(49,11,152,0.91) ;
 }
 .button:active {
-
+    background-color: rgba(107, 66, 222, 0.91)
 }
