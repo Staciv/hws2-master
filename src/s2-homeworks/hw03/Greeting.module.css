@@ -2,21 +2,47 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    gap: 12px;
 }
 
 .error {
+    font-size: 14px;
+    color: #CC0000;
 }
 
 .input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
 
 .input:focus {
+    outline: none;
+    border: 1px solid #D1D1D1;
 }
 
 .errorInput {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #CC0000;
+    border-radius: 5px;
+}
+
+.errorInput:focus {
+    padding: 8px 12px;
+    font-size: 16px;
+    /*border: 1px solid #CC0000;*/
 }
 
 .button {
+    height: 36px;
+    padding: 8px 24px;
+    background-color: #0066CC;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 3px;
 }
 
 .button:focus {
@@ -29,6 +55,8 @@
 }
 
 .text {
+    color: #00000080;
+    opacity: 50%;
 }
 
 .greeting {
