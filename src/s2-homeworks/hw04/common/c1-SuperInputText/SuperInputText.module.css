@@ -5,16 +5,29 @@
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
 }
 
 .superInput {
+    width: 372px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
 }
 
 .errorInput {
+    width: 372px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #CC1439;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    font-size: 10px;
+    color:#CC1439;
 }
