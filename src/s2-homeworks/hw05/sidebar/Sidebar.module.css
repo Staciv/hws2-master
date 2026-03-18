@@ -1,25 +1,81 @@
 .sidebar {
+    display: none;
+    position: fixed; /* фиксируем относительно экрана */
+    top: 0;
+    left: 0;
+
+    width: 300px; /* или сколько нужно */
+    height: 100vh; /* вся высота экрана */
+
+    z-index: 9999; /* поверх всего */
+
+    background: #FFFFFF;
 }
 
 .sidebar.open {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+
+
 }
 
 .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 9998;
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    order: 1;
+    padding: 63px 46px;
 }
 
 .nav a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .nav a:hover {
+    color: #58ACFF;
+    content: "";
+    border-bottom: 2px solid #58ACFF;
+    width: fit-content;
 }
 
 .nav a.active {
+   color: #3D6B99;
+    text-decoration: underline;
 }
+
 .close {
+    display: flex;
+    justify-content: flex-start;
+    order: 2;
+
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    font: inherit;
+    color: inherit;
+
+    cursor: pointer;
 }
 
 .close img {
+    width: 24px;
+    height: 24px;
 }
