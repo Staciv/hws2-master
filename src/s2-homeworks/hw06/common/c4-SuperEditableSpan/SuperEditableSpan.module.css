@@ -1,11 +1,22 @@
 .spanBlock {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .span {
+    font-size: 16px;
+    color: #0080FF;
+}
+
+.span:hover {
+    text-decoration: underline;
 }
 
 .input {
 }
 
 .pen {
+    width: 24px;
+    height: 24px;
 }
