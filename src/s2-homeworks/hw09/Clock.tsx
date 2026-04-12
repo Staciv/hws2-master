@@ -27,10 +27,9 @@ function Clock() {
 
     const stop = () => {
         clearInterval(timerId)
+        setTimerId(undefined)
         setDisabledButtonStart(false)
         setDisabledButtonStop(true)
-        // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
-
     }
 
     const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
@@ -45,12 +44,13 @@ function Clock() {
     const monthDate = String(date.getMonth() + 1).padStart(2, '0')
     const year = date.getFullYear()
 
-    const stringDate = `${day}.${monthDate}.${year}` || <br/>
+    const stringDate = `${day}.${monthDate}.${year}`
 
     const hours = String(date.getHours()).padStart(2, '0')
     const minutes = String(date.getMinutes()).padStart(2, '0')
+    const seconds = String(date.getSeconds()).padStart(2, '0')
 
-    const stringTime = `${hours}:${minutes}` || <br/>
+    const stringTime = `${hours}:${minutes}:${seconds}`
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     let weekday: number = date.getDay();
     let month = date.getMonth()
