@@ -5,19 +5,31 @@
 }
 
 .users {
+    width: 100%;
 }
 
 .buttonsContainer {
+    margin: 20px 0;
+   display: flex;
+    justify-content: flex-end;
+    gap: 12px;
 }
 
 .container {
+    width: calc(100vw - 50%);
 }
 
 .thead {
+    width: 100%;
+    background-color: #E5E5E5;
 }
 
 .nameCol {
+    padding: 16px;
+    color: #000000;
 }
 
 .ageCol {
+    padding: 16px;
+    color: #000000;
 }
