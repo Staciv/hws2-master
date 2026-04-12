@@ -40,14 +40,17 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}` || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
-    // const stringDate = date.toLocaleDateString() || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
-
+    // const stringTime = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}` || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
     const day = String(date.getDate()).padStart(2, '0')
     const monthDate = String(date.getMonth() + 1).padStart(2, '0')
     const year = date.getFullYear()
 
-    const stringDate = `${day}.${monthDate}.${year}`
+    const stringDate = `${day}.${monthDate}.${year}` || <br/>
+
+    const hours = String(date.getHours()).padStart(2, '0')
+    const minutes = String(date.getMinutes()).padStart(2, '0')
+
+    const stringTime = `${hours}:${minutes}` || <br/>
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     let weekday: number = date.getDay();
     let month = date.getMonth()
