@@ -1,10 +1,16 @@
 .buttonsContainer {
+    margin: 30px 0;
+    display: flex;
+    gap: 30px   ;
 }
 
+
 .clock {
+    margin: 20px 0;
 }
 
 .watch {
+    cursor: pointer;
 }
 
 .watch strong {
