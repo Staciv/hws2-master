@@ -35,11 +35,9 @@ const HW12 = () => {
     // взять ид темы из редакса
 
     const themeId = useSelector((state:RootState) => state.theme.themeId)
-    console.log(themeId)
 
 
     const change = (id: ThemesType["id"]) => { // дописать функцию
-        console.log(id)
         dispatch(changeThemeId(id))
     }
 
@@ -59,6 +57,7 @@ const HW12 = () => {
                     className={s.select}
                     options={themes}
                     onChangeOption={change}
+                    value={themeId}
                     // сделать переключение тем
 
                 />
